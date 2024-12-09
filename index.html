@@ -264,12 +264,12 @@
 
     try {
        
-        const prediction = await predictCarPrice({
+        const prediction = await predictPrice(
             carName,
             companyName,
-            year: Number(year), 
+            year,
             fuelType
-        });
+        );
 
        
         document.getElementById('result').innerText = `Predicted value: ${prediction}`;
