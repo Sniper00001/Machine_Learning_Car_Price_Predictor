@@ -23,7 +23,7 @@ def predict():
             return jsonify({'error': 'Missing required information'}), 400
 
        
-        model_input = [[carName, company, year, fuel_type]] 
+        model_input = [[carName, company, int(year), fuel_type]] 
        
         predictions = model.predict(model_input)
 
