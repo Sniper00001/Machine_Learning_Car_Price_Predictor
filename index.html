@@ -11,7 +11,7 @@
 <body>
     <div class="container">
         <h1>Car Price Prediction</h1>
-        <form id="car-price-form">
+        <form id="car-price-form" onsubmit="event.preventDefault(); makePrediction();">>
 
             <label for="car-name">Select Car Name:</label>
             <select id="car-name" name="car-name" required>
@@ -243,7 +243,7 @@
                 <option value="LPG">LPG</option>
             </select>
 
-            <button type="submit" onclick="makePrediction()">Predict Price</button>
+            <button type="submit" >Predict Price</button>
         </form>
     </div>
 </body>
